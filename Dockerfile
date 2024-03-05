@@ -7,6 +7,7 @@ FROM python:3.8-slim
 # Set environment variables for New Relic
 ENV NEW_RELIC_LICENSE_KEY=#####
 ENV NEW_RELIC_APP_NAME=uat_log_tester
+ENV NEW_RELIC_DISTRIBUTED_TRACING_ENABLED=true
 
 # Install New Relic Python agent
 RUN pip install flask
